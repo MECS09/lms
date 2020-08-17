@@ -18,7 +18,15 @@
     <body>
         @include('inc.navbar')
         <div class="container">
+            @include('inc.messages')
             @yield('content')
         </div>
+
+        <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+            <script>
+                // Replace the <textarea id="editor1"> with a CKEditor 4
+                // instance, using default configuration.
+                CKEDITOR.replace( 'article-ckeditor' );
+            </script>
     </body>
 </html>
