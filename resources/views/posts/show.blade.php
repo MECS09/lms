@@ -1,5 +1,5 @@
 
-@extends('layouts.welcome')
+@extends('layouts.app')
 
 @section('content')
     <br>
